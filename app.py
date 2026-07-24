@@ -22,4 +22,4 @@ if st.button("Predict Price"):
   input_data= pd.DataFrame([[car_age,car_size,max_power_delivered,city_freq]], 
                            columns=['car_age','car_size','max_power_delivered','city_freq'])
   prediction= model.predict(input_data)[0]
-  st.success(f"Estimated car price : ${prediction: , .2f}")
+  st.success(f"Estimated car price : ${prediction:,.2f}")
